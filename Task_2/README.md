@@ -112,9 +112,6 @@ Each module is designed for modularity and separation of concerns.
 ## How to Run the Project
 
 ### 1. Clone the Repository
-```bash
-cd Task_2/AI_Resume_Screening_System
-```
 
 ### 2. Navigate to Project Folder
 ```bash
