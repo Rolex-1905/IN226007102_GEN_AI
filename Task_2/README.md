@@ -60,27 +60,39 @@ User uploads resumes → System extracts skills → Compares with job descriptio
 ## Project Structure
 
 ```bash
-Resume-ATS-Score/
-├── project/
-│   ├── __pycache__/
+Task_2/
+├── AI_Resume_Screening_System/
 │   ├── chains/
-│   ├── prompts/
-│   ├── utils/
-│   ├── venv/
+│   │   ├── extract_chain.py
+│   │   ├── match_chain.py
+│   │   └── score_chain.py
 │   │
+│   ├── prompts/
+│   │   ├── extract_prompt.py
+│   │   ├── match_prompt.py
+│   │   └── score_prompt.py
+│   │
+│   ├── utils/
+│   │   └── resume_parser.py
+│   │  
 │   ├── .env
 │   ├── app.py
 │   ├── main.py
 │   ├── job_description.txt
 │   ├── requirements.txt
-│   ├── test_env.py
-│   │
-│   └── Explanation-more-in-detail
+│   └── test_env.py
+│   
+└── Outputs/
+│   ├── LangSmith_Tracing.jpg
+│   ├── Output_1.jpg
+│   └── Output_2.jpg
 │
 └── resumes/
-    ├── Arun Kumar Average.pdf
-    ├── Rahul Sharma Strength.txt
-    └── Ramesh weak.txt
+│    ├── Arun Kumar Average.pdf
+│    ├── Rahul Sharma Strength.txt
+│    └── Ramesh weak.txt
+│
+└── README.md
 ```
 
 ## Notes (for README clarity)
@@ -96,8 +108,58 @@ Resume-ATS-Score/
   
 Each module is designed for modularity and separation of concerns.
 
+
+## How to Run the Project
+
+### 1. Clone the Repository
+```bash
+cd Task_2/AI_Resume_Screening_System
+```
+
+### 2. Navigate to Project Folder
+```bash
+cd Task_2/AI_Resume_Screening_System
+```
+
+### 3. Create Virtual Environment (Optional but Recommended)
+```bash
+python -m venv venv
+venv\Scripts\activate   # Windows
+```
+
+### 4. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Add API Keys
+
+Create a `.env` file in the root directory and add:
+
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+LANGCHAIN_API_KEY=your_langchain_api_key_here
+```
+
+### 6. Run the Application
+```bash
+streamlit run app.py
+```
+
+### 7. Open in Browser
+```
+http://localhost:8501
+```
+
 ---
 
+## ⚠️ Notes
+- Use Python 3.8+
+- Ensure all dependencies are installed
+- If Streamlit is missing:
+```bash
+pip install streamlit
+```
 ## Input Stage
 
 The system accepts:
