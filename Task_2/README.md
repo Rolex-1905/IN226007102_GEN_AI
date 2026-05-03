@@ -111,7 +111,7 @@ Each module is designed for modularity and separation of concerns.
 
 ## How to Run the Project
 
-### 1. Clone the Repository
+### 1. Download the Repository
 
 ### 2. Navigate to Project Folder
 ```bash
@@ -121,7 +121,7 @@ cd Task_2/AI_Resume_Screening_System
 ### 3. Create Virtual Environment (Optional but Recommended)
 ```bash
 python -m venv venv
-venv\Scripts\activate   # Windows
+venv\Scripts\activate
 ```
 
 ### 4. Install Dependencies
