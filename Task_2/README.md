@@ -82,12 +82,12 @@ Task_2/
 │   ├── requirements.txt
 │   └── test_env.py
 │   
-└── Outputs/
+├── Outputs/
 │   ├── LangSmith_Tracing.jpg
 │   ├── Output_1.jpg
 │   └── Output_2.jpg
 │
-└── resumes/
+├── resumes/
 │    ├── Arun Kumar Average.pdf
 │    ├── Rahul Sharma Strength.txt
 │    └── Ramesh weak.txt
