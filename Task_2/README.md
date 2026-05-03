@@ -270,8 +270,11 @@ The system supports resume parsing using:
 ---
 
 ## Environment Variables
+
 OPENAI_API_KEY=your_key
+
 LANGCHAIN_API_KEY=your_key
+
 LANGCHAIN_TRACING_V2=true
 
 
